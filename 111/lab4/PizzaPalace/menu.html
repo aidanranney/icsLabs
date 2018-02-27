@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="default.css">
+<title>"Pizza Palace - Menu Selections"</title>
+<style>
+</style>
+<script>
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+}
+</script>
+</head>
+
+<body>
+<header>
+  Pizza Palace
+</header>
+
+<nav>
+  <ul id="myTopnav" class="topnav">
+	  <li><a href="index.html" title="Return to site main page">Main</a></li>
+	  <li><a href="menu.html" title="View current menu" class="viewing">Menu</a></li>
+	  <li><a href="specials.html" title="View today's specials">Specials</a></li>
+	  <li><a href="opportunity.html" title="Employment opportunities">Opportunity</a></li>
+	  <li><a href="about.html" title="About our restaurant">About Us</a></li>
+		<li><a href="order.html" title="Place an order">Place Order</a></li>
+	  <li class="icon"> <a href="javascript:void(0);" style="font-size:15px;" onClick="myFunction()">&#9776; </a></li>
+  </ul>
+</nav>
+
+<article>
+<section>
+
+  <h3>Pizza Selections</h3>
+  <ul>
+    <li>Cheese Pizza - $10</li><br>
+    <li>Pepperoni Pizza - $12</li><br>
+    <li>Hawaiian Pizza - $12</li><br>
+    <li>Vegetarian Pizza - $8</li><br>
+  </ul>
+
+  <h3>Toppings</h3>
+  <ul>
+    <li>mushrooms</li><br>
+    <li>green pepper</li><br>
+    <li>zucchini</li><br>
+    <li>jalape&ntilde;o pepper</li><br>
+  </ul>
+
+</section>
+</article>
+
+<footer>
+  Copyright &copy; 2017
+</footer>
+</body>
+</html>

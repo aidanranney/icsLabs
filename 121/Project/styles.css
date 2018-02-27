@@ -1,0 +1,47 @@
+body {
+  background-color: #ff7c30;
+}
+
+hr {
+  border-top: 3px dotted;
+  border-bottom: none;
+
+}
+
+#foreground {
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 80%;
+  padding-left:30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #54c3ff;
+  font-size: 15px;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+#welcome {
+  text-align: center;
+}
+
+#redScore {
+  color: red;
+  display: none;
+}
+
+#yellowScore {
+  color: red;
+  background-color: yellow;
+  width: 300px;
+  display: none;
+}
+
+#highScore {
+  color: red;
+  background-color: yellow;
+  width: 185px;
+  display: none;
+}

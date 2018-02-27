@@ -1,0 +1,27 @@
+GET number ---> 			System.out.println("Enter a number"); #will print a string
+							int number = userInput.nextInt(); #userInput is a scanner object
+				
+
+FOR 5 times:				for (int counter=0; counter < 5; counter=counter + 1) {
+A							A
+							}
+
+REPEAT UNTIL X:				while (!x){
+A							A
+							}
+
+Counter=0					Scanner userInput=new Scanner(System.in);
+Total=0						int counter;
+GET Mark					int total;
+while mark !=0:				int mark;
+	total = total + mark	counter=0;
+	counter = counter + 1	total=0;
+	GET mark				
+OUTPUT total/counter		System.out.println("Enter an integer mark (0 to quit):");
+							mark=userInput.nextInt();
+							while (mark!=0){
+								total=total+mark;
+								counter=counter + 1;
+								System.out.println("Enter an integer mark (0 to quit):";
+								}
+							System.out.println(total/counter);

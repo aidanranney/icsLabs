@@ -1,0 +1,88 @@
+/* CSS Document */
+
+body {
+    background-color: #818AAA;
+    background-image: url("images/Snowboard26.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Helvetica, "sans-serif";
+}
+footer {
+    position: fixed;
+    bottom: 1%;
+    left: 82%;
+    width: 15%;
+    text-align: right;
+}
+header a {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    text-decoration: none;
+    color: black;
+    font-family: Helvetica, "sans-serif";
+    font-size: 50px;
+    font-weight: 500;
+    opacity: .5;
+}
+nav {
+    position: absolute;
+    top: 190px;
+    left: 50px;
+    width: 100px;
+    height: 100%;
+}
+nav a {
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    font-family: Helvetica, "sans-serif";
+    font-size: 25px;
+    font-weight: 500;
+    opacity: .45;
+}
+nav a:hover {
+    background-color: grey;
+}
+.viewing {
+    font-weight: bold;
+}
+article {
+    position: relative;
+    left: 200px;
+    top: 200px;
+    padding: 10px;
+    width: 50%;
+    border-style: none;
+    background: rgba(80, 122, 164, .7);
+}
+tr,
+td {
+    border: 1px solid #003380;
+    padding: 3px;
+}
+.gallery {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.images {
+    display: inline-block;
+    width: 450px;
+    height: 350px;
+    padding: 20px;
+}
+.images img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.images:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

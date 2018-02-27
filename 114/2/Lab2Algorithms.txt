@@ -1,0 +1,103 @@
+A
+
+
+
+
+1.
+
+GET value
+IF value is 100
+	OUTPUT "It's 100"
+	
+
+2.
+
+sum = 0
+FOR x IN 1 to 500
+	sum = sum + x
+OUTPUT sum
+
+3.
+
+GET score1
+
+GET score2
+
+IF score1>score2
+	OUTPUT "Team number 1 won the game."
+
+ELSE IF score1<score2
+	OUTPUT "Team number 2 won the game."
+ELSE
+	OUTPUT "The game was a tie."
+
+
+
+B
+
+
+1.
+
+
+GET grams1, grams2
+GET cost1, cost2
+
+cerealCost1=grams1/cost1
+cerealCost2=grams2/cost2
+
+IF cerealCost1<cerealCost2
+	OUTPUT "Cereal 1 is cheaper"
+ELSE IF cerealCost2<cerealCost1
+	OUTPUT "Cereal 2 is cheaper"
+ELSE
+	OUTPUT "They cost the same"
+
+	
+2.
+
+GET value1, value2
+
+IF value1>0
+	OUTPUT value1+value2
+ELSE IF value1<0
+	OUTPUT value1*value2
+ELSE
+	OUTPUT 0
+
+
+3.
+total = 0
+FOR 5 times
+	GET x
+	sum = x + sum
+OUTPUT sum/5
+	
+	
+4.
+
+count = 0
+sum = 0
+
+WHILE mark != 0
+	sum = sum + mark
+	GET mark
+	count = count + 1
+	
+OUTPUT sum/count
+
+5.
+
+
+WHILE choice != 5
+	OUTPUT
+		"1. deposit
+		 2. withdraw
+		 3. transfer
+		 4. display balance
+		 5. quit
+			Enter your choice (1, 2, 3, 4, 5): "
+	GET choice
+	IF choice != <1 or >5
+		OUTPUT
+			"This choice is invalid; please enter your choice: "
+			

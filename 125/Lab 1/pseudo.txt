@@ -1,0 +1,9 @@
+For each integer in arrayB, check if it is the first integer of arrayA.
+
+If the first integer of arrayA is present in arrayB, check if the next integer in arrayB is the same as the second integer in arrayA.
+
+Check each subsequent integer in arrayB against the next integer in arrayA, until the end of arrayA.
+
+If the end of arrayA is reached, print "array A is present in array B".
+
+Otherwise, print "array A is not present in array B".

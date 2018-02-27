@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="default.css">
+<meta charset="utf-8">
+<style>
+    .formbox {
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        width: 620px;
+        background-color: #ffffd5;
+        padding: 5px;
+        margin: 0px auto;
+    }
+    input[type=text],
+    input[type=tel] {
+        font-family: Helvetica, Arial, sans-serif;
+        border: 1px solid grey;
+        font-size: 20px;
+        width: 200px;
+        min-height: 30px;
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        outline: none;
+        border-radius: 5px;
+    }
+    input[type=submit],
+    input[type=reset] {
+        background: none;
+        padding: 10px;
+    }
+		input:required {
+			background: #AAAAAA url(images/red_asterisk.png) no-repeat 98% center;
+		}
+    input:focus {
+        background: #515FFF;
+        border: 1px solid #555;
+        box-shadow: 0 0 3px #aaa;
+        padding-right: 20px;
+    }
+    input:focus:invalid {
+        background: #fff url(images/invalid.png) no-repeat 98% center;
+        box-shadow: 0 0 5px #515FFF;
+        border-color: #515FFF;
+    }
+    input[name=expiry] {
+        width: 100px;
+    }
+    button.submit {
+        background-color: #68b12f;
+        background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+        background: -webkit-linear-gradient(top, #818AAA, #818AFF);
+        background: -moz-linear-gradient(top, #818AAA, #818AFF);
+        background: -ms-linear-gradient(top, #818AAA, #818AFF);
+        background: -o-linear-gradient(top, #818AAA, #818AFF);
+        background: linear-gradient(top, #818AAA, #818AFF);
+        border: 1px solid #515FFF;
+        border-bottom: 1px solid #515FFF;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        box-shadow: inset 0 1px 0 0 #818AFF;
+        -webkit-box-shadow: 0 1px 0 0 #818AFF inset;
+        -moz-box-shadow: 0 1px 0 0 #818AFF inset;
+        -ms-box-shadow: 0 1px 0 0 #818AFF inset;
+        -o-box-shadow: 0 1px 0 0 #818AFF inset;
+        color: white;
+        font-weight: bold;
+        padding: 6px 20px;
+        text-align: center;
+        text-shadow: 0 -1px 0 #818AFF;
+    }
+    button.submit:hover {
+        opacity: .85;
+        cursor: pointer;
+    }
+    button.submit:active {
+        border: 1px solid #818AAA;
+        box-shadow: 0 0 10px 5px #818AFF inset;
+        -webkit-box-shadow: 0 0 10px 5px #818AFF inset;
+        -moz-box-shadow: 0 0 10px 5px #818AFF inset;
+        -ms-box-shadow: 0 0 10px 5px #818AFF inset;
+        -o-box-shadow: 0 0 10px 5px #818AFF inset;
+    }
+    button.submit:disabled {
+        opacity: 0.50;
+        cursor: not-allowed;
+    }
+    button.reset {
+        background-color: #68b12f;
+        background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+        background: -webkit-linear-gradient(top, #818AAA, #818AFF);
+        background: -moz-linear-gradient(top, #818AAA, #818AFF);
+        background: -ms-linear-gradient(top, #818AAA, #818AFF);
+        background: -o-linear-gradient(top, #818AAA, #818AFF);
+        background: linear-gradient(top, #818AAA, #818AFF);
+        border: 1px solid #515FFF;
+        border-bottom: 1px solid #515FFF;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        box-shadow: inset 0 1px 0 0 #818AFF;
+        -webkit-box-shadow: 0 1px 0 0 #818AFF inset;
+        -moz-box-shadow: 0 1px 0 0 #818AFF inset;
+        -ms-box-shadow: 0 1px 0 0 #818AFF inset;
+        -o-box-shadow: 0 1px 0 0 #818AFF inset;
+        color: white;
+        font-weight: bold;
+        padding: 6px 20px;
+        text-align: center;
+        text-shadow: 0 -1px 0 #818AFF;
+    }
+    button.reset:hover {
+        opacity: .85;
+        cursor: pointer;
+    }
+    button.reset:active {
+        border: 1px solid #818AFF;
+        box-shadow: 0 0 10px 5px #818AFF inset;
+        -webkit-box-shadow: 0 0 10px 5px #818AFF inset;
+        -moz-box-shadow: 0 0 10px 5px #818AFF inset;
+        -ms-box-shadow: 0 0 10px 5px #818AFF inset;
+        -o-box-shadow: 0 0 10px 5px #818AFF inset;
+    }
+    button.reset:disabled {
+        opacity: 0.50;
+        cursor: not-allowed;
+    }
+</style>
+<title>We Love Snowboarding</title>
+</head>
+
+<body>
+
+<header><a href="index.html">We Love Snowboarding</a></header>
+
+<nav>
+	<a href="styles.html" title="styles">styles</a>
+	<a href="photos.html" title="photos">photos</a>
+	<a href="about.html" title="about">about</a>
+	<a href="safety.html" title="safety">safety</a>
+</nav>
+
+<article>
+<form name="signup" method="post" class="formset">
+<fieldset>
+<fieldset>
+	<legend>Your Contact Info</legend>
+	<label>First name:</label>
+	<input type="text" name="firstname"
+		required id="firstname"
+		placeholder="Your first name">
+
+	<label>Last name:</label>
+	<input type="text" name="lastname"
+		required id="lastname"
+		placeholder="Your last name">
+
+	<label>Phone Number:</label>
+	<input type="tel" name="phonenumber"
+		title="(250)999-9999"
+		required pattern="[\(]\d{3}[\)]\s*\d{3}[\-]\d{4}"
+		placeholder="(250) 999-9999">
+
+	<label>E-mail Address:</label>
+	<input type="text" name="email"
+		placeholder="e.g. yourname@gmail.com"
+		required id="email">
+	</fieldset>
+
+	<fieldset>
+		<legend>Select your age range:</legend>
+
+			<input type="radio" name="age"
+				value="15-18" id="15-18">
+			<label for="15-18">15-18</label><br>
+
+			<input type="radio" name="age"
+				value="18-22" id="18-22">
+			<label for="18-22">18-22</label><br>
+
+			<input type="radio" name="age"
+				value="22-50" id="22-50">
+			<label for="22-50">22-50</label><br>
+	</fieldset>
+
+<fieldset>
+	<legend>Account Info</legend>
+	<label>User Name:</label>
+	<input type="text" name="username"
+	required id="username">
+
+	<label>Password:</label>
+	<input type="text" name="password"
+	required id="password">
+</fieldset>
+
+
+<fieldset>
+	<legend>Leave Your Comments Below:</legend>
+	<textarea cols="50" rows="4" name="comment">(Optional)</textarea>
+</fieldset>
+
+<br>
+<button class="submit" type="submit">Submit</button>
+
+<button class="reset" type="reset">Reset</button>
+
+</fieldset>
+</form>
+</article>
+
+<footer>Copyright &copy; 2017</footer>
+
+</body>
+</html>
